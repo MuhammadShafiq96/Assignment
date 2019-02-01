@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Use grid</title>
+    <style>
+    h1{
+        text-align: center;
+        color:brown;
+    }
+   
+
+
+    .child:nth-child(1){
+        grid-area: area1;
+        background:royalblue;
+    }
+    .child:nth-child(2){
+        grid-area: area2;
+        background:yellowgreen;
+    }
+    .child:nth-child(3){
+        grid-area: area3;
+        background:blueviolet;
+    }
+    .child:nth-child(4){
+        grid-area: area4;
+        background:cyan;
+    }
+   
+    .child:nth-child(5){
+        grid-area: area5;
+        background:palevioletred;
+    }
+    .child{
+        border: 1px solid blue;
+        margin: 2px;
+        
+    }
+       
+    #parent{
+        border: 4px dashed red;
+        text-align: center;
+        width: 50vw;
+        height:70vh;
+        margin: auto;
+        display: grid;
+        grid-auto-columns: 3;
+        grid-auto-rows: 3;
+        grid-template:
+        "area1 area2 area3"
+        "area1 area4 area3"
+        "area5 area5 area5";
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>Assignment No 8</h1>
+    <div id="parent">
+        <div class="child"><h4>1-Left Article</h4></div>
+        <div class="child"><h4>2-Home Page</h4></div>
+        <div class="child"><h4>3-Right Article</h4></div>
+        <div class="child"><h4>4-Body </h4></div>
+        <div class="child"><h4>5-Footer</h4></div>
+    </div>
+</body>
+</html>
